@@ -1,0 +1,81 @@
+body {
+    /* Photo by Solen Feyissa on Unsplash https://unsplash.com/photos/kVG0XF8j5ao */
+    background-image: url(images/solen-feyissa-kVG0XF8j5ao-unsplash.jpg);
+    object-fit: cover;
+    color: rgb(43,62,1);
+}
+
+nav {
+    padding: 150px;
+}
+
+nav a {
+    margin-right: 50px;
+}
+
+.hero h2, p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43,62,1);
+}
+
+a:hover {
+    color: rgb(87,156,5);
+}
+
+.hero {
+    width: 100%;
+    height: 900px;
+}
+
+.box, .paragraph {
+    margin-bottom: 100px;
+}
+
+.box {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(191,63,120,255);
+    transition: background-color 1s;
+    display: inline-flex;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+
+.paragraph {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(252,255,227);
+    color: rgba(191,63,120,255);
+    transition: color 2s; 
+    display: inline-flex;
+    float: right;
+    margin-right: 5%;
+    border-radius: 50px;
+}
+
+.paragraph p {
+    padding: 40px;
+}
+
+.counter {
+    background-color: rgb(219,248,174);
+    width: 800px;
+    height: 500px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-bottom: 200px;
+}
+
+.number, .counter-text {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.modal {
+    display: none;
+}
