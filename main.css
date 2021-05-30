@@ -50,7 +50,7 @@ a:hover {
     height: 500px;
     background-color: rgb(252,255,227);
     color: rgba(191,63,120,255);
-    transition: color 2s; 
+    transition: opacity 300ms ease-in, color 1s; 
     display: inline-flex;
     float: right;
     margin-right: 5%;
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .paragraph p {
-    padding: 40px;
+    padding: 100px 40px;
 }
 
 .counter {

@@ -9,7 +9,7 @@ let prevRatio2 = 0.0;
 let increasingColor = "rgba(191,63,120, ratio)";
 let decreasingColor = "rgba(219,248,174, ratio)";
 let fontColor1 = "rgba(191,63,120, ratio)";
-let fontColor2 = "rgba(252,255,227, ratio)";
+// let fontColor2 = "rgba(252,255,227, ratio)";
 
 //This gets the process started
 window.addEventListener("load", (event) => {
@@ -96,9 +96,11 @@ function handleIntersectOpacity(entries, observer) {
     entries.forEach((entry) => {
         if (entry.intersectionRatio > prevRatio2) {
             entry.target.style.color = fontColor1.replace("ratio", entry.intersectionRatio);
-        } else {
-            entry.target.style.color = fontColor2.replace("ratio", entry.intersectionRatio);
-        }
+        } 
+        
+        // else {
+        //     entry.target.style.color = fontColor2.replace("ratio", entry.intersectionRatio);
+        // }
 
         prevRatio2 = entry.intersectionRatio;
 
