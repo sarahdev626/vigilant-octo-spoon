@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
+    
     <title>Javascript Practice Site</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="hero">
             <nav>
                 <a href="#">About This Project</a>
-                <a href="#">Contact Me</a>
+                <a href="#" id="contact">Contact Me</a>
             </nav>
     
             <div>
@@ -24,7 +24,9 @@
                 <p>a pop-up modal form, a few intersection observers, and a counter</p>
             </div>
         </div>
+
         <br>
+
         <div>
             <div class="box">
             </div>
@@ -36,7 +38,9 @@
                 Porro ipsa exercitationem quasi recusandae eos facere earum facilis culpa perspiciatis quod labore, maxime omnis doloremque, commodi consectetur sunt fugiat libero sequi fugit quam adipisci totam dicta voluptatum. Illo, sit.</p>
             </div>
         </div>
+
         <br>
+
         <div>
             <div class="box">
             </div>
@@ -48,7 +52,9 @@
                 Eveniet enim numquam atque autem deserunt officia, sapiente corporis dicta molestias mollitia aliquid maxime. Ipsum error alias molestiae vitae harum cum eveniet impedit tenetur, repellendus a! Dolor quas et voluptate?</p>
             </div>
         </div>
+
         <br>
+
         <div class="counter">
             <div class="number">
                 <p>12345</p>
@@ -57,21 +63,25 @@
                 <p>Every time this number changes....</p>
             </div>     
         </div>
-        <div class="modal">
-            <h3>Say Hello!</h3>
-            <h5>This form doesn't actually go anywhere. It's just for show... :)</h5>
-            <form action="#">
-                <label for="name">Name</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="message">Message</label>
-                <input type="text">
-                <label for="submit">Submit</label>
-                <input type="submit">
-            </form>
+
+        <div id="modal">
+            <div class="modal-content">
+                <span class="closeBtn">&times;</span>
+                <div class="modal-form">
+                    <h3>Say Hello!</h3>
+                    <h4>This form doesn't actually go anywhere. It's just for show... :)</h4>
+                    <form action="">
+                        <input type="text" id="name" placeholder="Name"> 
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="text" id="message" placeholder="Message">
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+                
+            </div>     
         </div>
-    </div>
-    
+
+    </div> 
+    <script src="script.js"></script>   
 </body>
 </html>

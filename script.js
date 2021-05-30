@@ -1,3 +1,4 @@
+
 //This is the increment of change as you scroll.
 const numSteps = 20.0;
 
@@ -106,3 +107,35 @@ function handleIntersectOpacity(entries, observer) {
 
     });
 }
+
+//Pop Up Modal
+//Get all the elements and put them into variables.
+var modal = document.getElementById("modal");
+
+var contact = document.getElementById("contact");
+
+var closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+//Listen for click to open
+contact.addEventListener('click', openPopUp);
+
+//Listen for click to close
+closeBtn.addEventListener('click', closePopUp);
+
+//Listen for click outside content box
+window.addEventListener('click', outsideBox);
+
+function openPopUp() {
+    modal.style.display = "block";
+}
+
+function closePopUp() {
+    modal.style.display = "none";
+}
+
+function outsideBox(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
