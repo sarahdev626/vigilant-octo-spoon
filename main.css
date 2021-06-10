@@ -71,7 +71,7 @@ a:hover {
     margin-bottom: 200px;
 }
 
-.number, .counter-text {
+#number, .counter-text {
     text-align: center;
     padding-top: 150px;
 }

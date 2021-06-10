@@ -1,4 +1,4 @@
-
+///////////////////// Intersection Observers ////////////////////
 //This is the increment of change as you scroll.
 const numSteps = 20.0;
 
@@ -24,7 +24,7 @@ window.addEventListener("load", (event) => {
 //Create observer variable.
 //Create the options, or "scenario"
 //Root is what it needs to pass into for something to happen. If 
-//left as "null", it will use the current viewport
+//left as "null", it will use the current viewport.
 //Root margin adds a margin to that if you want. Not necessary, though. 
 //Threshold is the increment from above.
 //new IntersectionObserver creates the observer and uses handleIntersectColor/handleIntersectOpacity
@@ -108,7 +108,7 @@ function handleIntersectOpacity(entries, observer) {
     });
 }
 
-//Pop Up Modal
+////////////////// Pop Up Modal ////////////////////////////
 //Get all the elements and put them into variables.
 var modal = document.getElementById("modal");
 
@@ -138,4 +138,32 @@ function outsideBox(e) {
         modal.style.display = "none";
     }
 }
+
+////////////////// Counter Section ////////////////////////
+//From MDN random number page
+//Will return a random integer between the given values
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+var currentDonations = 134312323;
+var countdown = setInterval(function() {
+    //This will increment the number up by a random integer value
+    currentDonations = currentDonations + getRandomInt(1, 3);
+    //Updates the number on the webpage.
+    document.getElementById("number").innerHTML = currentDonations;
+
+    //Keeps the number from going up into perpetuity...
+    if(currentDonations === 134320000) {
+        clearInterval(countdown);
+    }
+//This should update the number at a random interval.
+//So instead of every second, every second, plus a random
+//number from 1-5000.
+}, 1000 + getRandomInt(1, 5000));
+
+
 
