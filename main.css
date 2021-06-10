@@ -2,28 +2,40 @@ body {
     /* Photo by Solen Feyissa on Unsplash https://unsplash.com/photos/kVG0XF8j5ao */
     background-image: url(images/solen-feyissa-kVG0XF8j5ao-unsplash.jpg);
     object-fit: cover;
-    color: rgb(43,62,1);
+    color: rgb(150,205,108);
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
-    padding: 150px;
+    padding: 100px;
 }
 
 nav a {
     margin-right: 50px;
+    color: white;
+    font-family: 'Barrio', cursive;
+    font-size: 32px;
+    color: rgb(115,10,72);
 }
 
 .hero h2, p {
     text-align: center;
+    color: rgb(115,10,72);
+}
+
+.main-title {
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Barrio', cursive;
+    font-size: 200%;
 }
 
 a {
     text-decoration: none;
-    color: rgb(43,62,1);
+    /* color: rgb(43,62,1); */
 }
 
 a:hover {
-    color: rgb(87,156,5);
+    color: white;
 }
 
 .hero {
@@ -59,6 +71,7 @@ a:hover {
 
 .paragraph p {
     padding: 100px 40px;
+    line-height: 2.5;
 }
 
 .counter {
@@ -69,11 +82,21 @@ a:hover {
     border-radius: 50px;
     margin-left: 5%;
     margin-bottom: 200px;
+    font-family: 'Barrio', cursive;
+}
+
+#number {
+    font-size: 300%;
+    color: rgb(115,10,72);
+    padding-top: 150px;
 }
 
 #number, .counter-text {
-    text-align: center;
-    padding-top: 150px;
+    text-align: center;    
+}
+
+.counter-text {
+    font-size: 2rem;
 }
 
 #modal {
@@ -107,18 +130,16 @@ a:hover {
 
 .closeBtn:hover,
 .closeBtn:focus {
-    color: #000;
+    color: rgb(115,10,72);
     text-decoration: none;
     cursor: pointer;
 }
 
 .modal-form h3 {
     display: block;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: #2D4826;
+    font-family: 'Barrio', cursive;
+    font-size: 32px;
+    color: rgb(115,10,72);
     text-align:center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -126,7 +147,7 @@ a:hover {
 
 .modal-form h4 {
     text-align: center;
-    color: #2D4826;
+    color: rgb(115,10,72);
     padding-bottom: 1rem;
 }
 
@@ -137,13 +158,14 @@ input {
     border-style: none;
     box-sizing: border-box;
     margin: 0 auto;
-    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25); 
-    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(115,10,72, 0.25); 
+    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(115,10,72, 0.25);
 }
 
 #name::placeholder, #email::placeholder, #message::placeholder {
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.75rem;
-    color: #7B9E72;
+    color: rgb(115,10,72);  
 }
 
 #name {
@@ -168,12 +190,13 @@ input {
 }
 
 #submit {
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: #f8c76b;
-    font-size: 0.5rem;
-    box-shadow: 0.0625rem 0.0625rem 0.0625rem #2D4826;
+    color: #FBF9E7;
+    font-size: 0.75rem;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem rgb(115,10,72);
     padding: 0.625rem 1.5625rem;
-    background: #2D4826;
+    background: rgb(115,10,72);
     display: block;
     margin: 1rem auto;
     border: 1px solid #2D4826;
@@ -183,7 +206,7 @@ input {
 #submit:hover,
 #submit:focus {
     background: #f8c76b;
-    color: #2D4826;
+    color: rgb(115,10,72);;
 }
 
 @keyframes openmodal {
