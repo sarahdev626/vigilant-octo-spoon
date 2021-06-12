@@ -111,6 +111,10 @@ a:hover {
     display: none;
 }
 
+.modal-form {
+    padding-bottom: 1rem;
+}
+
 .modal-content {
     background-color: #f8c76b;
     margin: 10% auto;
@@ -126,6 +130,7 @@ a:hover {
     color: #fff;
     float: right;
     font-size: 30px;
+    margin-right: 1rem;
 }
 
 .closeBtn:hover,
@@ -141,8 +146,8 @@ a:hover {
     font-size: 32px;
     color: rgb(115,10,72);
     text-align:center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
 }
 
 .modal-form h4 {
