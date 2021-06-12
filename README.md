@@ -13,7 +13,7 @@ The counter is meant to act like it's counting a number of items as they are giv
 ![Intersection Observer 1](images/observer1.png)
 
 ### Observer 2
-![Intersection Observer 2](images.observer2.png)
+![Intersection Observer 2](images/observer2.png)
 
 ### Counter
 ![Counter](images/counter.png)
